@@ -47,7 +47,16 @@
     <section class="hero section">
       <div class="container">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn" type="button">Замовити послугу</button>
+        <button class="btn" type="button" data-modal-open>Замовити послугу</button>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-button" type="button" data-modal-close>
+            <svg class="close-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-close" ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     
@@ -100,9 +109,24 @@
       <div class="container">
         <h2 class="title">Чим ми займаємося</h2>
         <ul class="items list">
-          <li><img class="img" src="./images/typing.jpg" alt="людина верстає сайт" width="370"></li>
-          <li><img class="img" src="./images/smartphone.jpg" alt="людина створює интерфейс" width="370"></li>
-          <li><img class="img" src="./images/color-palette.jpg" alt="людина створює дизайн" width="370"></li>
+          <li>
+            <div class="thumb">
+              <img class="img" src="./images/typing.jpg" alt="людина верстає сайт" width="370">
+              <p class="lable">Десктопні додатки</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb">
+              <img class="img" src="./images/smartphone.jpg" alt="людина створює интерфейс" width="370">
+              <p class="lable">Мобільні додатки</p>
+            </div>
+          </li>
+          <li>
+            <div class="thumb">
+              <img class="img" src="./images/color-palette.jpg" alt="людина створює дизайн" width="370">
+              <p class="lable">Дизайнерські рішення</p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
@@ -360,6 +384,7 @@
       </ul>
     </div>
   </footer>
-  
+ 
+  <script src="./js/modal.js"></script>
 </body>
 </html>
