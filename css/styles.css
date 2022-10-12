@@ -310,6 +310,11 @@ li {
   background-color: var(--primary-background-color);
 }
 
+.close-button:hover,
+.close-button:focus {
+  cursor: pointer;
+}
+
 /*-----------------------Studio page - Features----------------------------------*/
 
 /*!-- h2 Особливості скритий-->*/
